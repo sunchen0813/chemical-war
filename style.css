@@ -1,0 +1,215 @@
+#overall{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    z-index: 1;
+}
+
+#count-down-timer{
+    position:fixed; 
+    top:20px; 
+    right:20px; 
+    width:80px; 
+    height: 80px; 
+    background-color: lightpink;
+}
+
+#endgame{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+}
+#endgamecontent{
+    position: absolute;
+    top: 37.5vh;
+    bottom: 37.5vh;
+    z-index: 3;
+    width: 100vw;
+    height: 25vh;
+    background-color: white;
+}
+#endgamebutton{
+    position: absolute;
+    top: 60vh;
+    left: 75vw;
+    z-index: 4;
+    width: 12vw;
+    height: 5vh;
+    background-color: rgb(189, 35, 35);
+}
+
+#chunk1{
+    background-color: lightcyan;
+    flex:1;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+
+
+}
+.elementbutton{
+    width: 6vw;
+    height: 6vw; 
+}
+.elementimage{
+    width: 5vw;
+    height: 5vw; 
+}
+#miner{
+    background-color: lightgray;
+    flex:2;
+
+}
+#minertable{
+    background-color: mediumaquamarine;
+    width: 33vw;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    
+}
+#minertable tr td{
+    background-color: rgb(71, 124, 107);
+    width: 11vw;
+    height: 12vh;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#backpack{
+    background-color: rgba(153, 45, 45, 0.411);
+    flex:1;
+}
+#backpacktable{
+    background-color: mediumaquamarine;
+    width: 33vw;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    
+}
+#backpacktable tr td{
+    background-color: rgb(71, 124, 107);
+    width: 11vw;
+    height: 12vh;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#compound{
+    background-color: rgba(40, 22, 105, 0.411);
+    flex:1;
+}
+#compoundtable{
+    background-color: rgb(102, 121, 205);
+    width: 33vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    
+}
+#compoundtable tr td{
+    background-color: rgb(87, 71, 124);
+    width: 11vw;
+    height: 12vh;
+    justify-content:space-between;
+    align-items: center;
+}
+#compoundbutton{
+    width: 6vw;
+    height: 6vw; 
+}
+#compoundimage{
+    width: 5vw;
+    height: 5vw;
+}
+
+#binimage{
+    width: 6vw;
+    height: 6vw;
+}
+
+
+#chunk2{
+    background-color:beige;
+    flex:1;
+    width: 33vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+
+}
+#question{
+    background-color: lightgreen;
+    flex:1;
+}
+#strengthen{
+    background-color:lightseagreen;
+    flex:1;
+}
+
+#chunk3{
+    background-color:blanchedalmond;
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+
+}
+#fight{
+    flex:1;
+    background-color: magenta;
+}
+
+#fighttable{
+    background-color: rgb(102, 205, 136);
+    width: 33vw;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+#fighttable tr td{
+    background-color: rgb(27, 124, 35);
+    width: 11vw;
+    height: 8vh;
+    justify-content:space-between;
+    align-items: center;
+}
+#fighttable tr .bloodline{
+    height: 5px;
+}
+#towerbloodbutton{
+    background-color: rgb(70, 114, 73);
+    width: 11vw;
+    height: 5vh;
+}
+#fighttable tr .tower{
+    height: 8vh;
+}
+
+#attacktable{
+    background-color: rgb(205, 102, 102);
+    width: 33vw;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+#attacktable tr td{
+    background-color: rgb(124, 27, 27);
+    width: 11vw;
+    height: 7.25vh;
+    justify-content:space-between;
+    align-items: center;
+}
+

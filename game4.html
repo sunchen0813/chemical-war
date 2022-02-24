@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html><!--網頁最外層-->
+    <head><!--網頁資訊-->
+        <meta charset="UTF-8"></meta><!--UTF-8編碼方式這樣才看得懂中文-->
+        <meta name="description" content="幫助大家學化學"/>
+        <meta name="author" content="劉佑庭 林育聖 陳昱辰"/>
+        <meta name="keywords" content="科展"/>
+        <meta name="viewport" content="width=device-width,inital-scale=1.0"/>
+        <title><!--網頁標籤-->
+            化學大戰
+        </title>
+        <link rel="stylesheet" href="style.css">
+           
+        
+    </head>
+        <body>
+            <div id="overall">
+                <h1 class="text-center" id="count-down-timer"></h1>
+                <div id="chunk1">
+                    hi
+                    <div id="miner">
+                        <table id="minertable" >
+                            <tr>
+                                <td id="box1"></td>
+                                <td id="box2"></td>
+                                <td id="box3"></td>
+                            </tr>
+                            <tr>
+                                <td id="box4"></td>
+                                <td id="box5"></td>
+                                <td id="box6"></td>
+                            </tr>
+                            <tr>
+                                <td id="box7"></td>
+                                <td id="box8"></td>
+                                <td id="box9"></td>
+                            </tr>
+                        </table>
+<!--                         <script type="text/javascript" src="box1.js">
+                        </script> -->
+                    </div>
+                    <div id="backpack">
+                        <table id="backpacktable" >
+                            <tr>
+                                <td id="backpack1"></td>
+                                <td id="backpack2"></td>
+                                <td id="backpack3"></td>
+                                <td id="backpack4"></td>
+                                <td id="backpack5"></td>
+                            </tr>
+                            <tr>
+                                <td id="backpack6"></td>
+                                <td id="backpack7"></td>
+                                <td id="backpack8"></td>
+                                <td id="backpack9"></td>
+                                <td id="backpack10"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="compound">
+                        <table id="compoundtable" >
+                            <tr>
+                                <td id="element1"></td>
+                                <td id="element2"></td>
+                                <td id="rightarrow"><button type="button" id="compoundbutton" onclick="compoundactive()" ><img src="picture/rightarrow.png" id="compoundimage"></button></td>
+                                <td id="product"></td>
+                            </tr>
+                            <tr>
+                                <td id="bin"><img src="picture/bin.png" id="binimage"></button></td>
+                                <td id="trashnumber" colspan="3"></td>
+                            </tr>
+                        </table>
+                        <!-- <table>
+                            <tr>
+                                <button type="button" id="compoundbutton" onclick="compoundactive()" ></button>
+                            </tr>
+                        </table> -->
+                        
+                        
+                    </div>
+                </div>
+                <div id="chunk2">
+                    hi
+                    <div id="question">
+                        <button type="button" id="questionproblem" onclick="readFolder()"></button>
+                    </div>
+                    <div id="strengthen">
+    
+                    </div>
+                </div>
+                <div id="chunk3">
+                    hi
+                    <div id="fight">
+                        <table id="fighttable">
+                            <tr>
+                                <td id="bloodline1" class="bloodline" colspan="5"></td>
+                            </tr>
+                            <tr>
+                                <td id="tower1" class="tower" colspan="5"><button type="button" id="towerbloodbutton" onclick="attacktower()"></button></td>
+                            </tr>
+                            <tr>
+                                <td id="enemyblood1" class="enemyblood"></td>
+                                <td id="enemyblood2" class="enemyblood"></td>
+                                <td id="enemyblood3" class="enemyblood"></td>
+                                <td id="enemyblood4" class="enemyblood"></td>
+                                <td id="enemyblood5" class="enemyblood"></td>
+                            </tr>
+                            <tr>
+                                <td id="enemy1" class="enemy"></td>
+                                <td id="enemy2" class="enemy"></td>
+                                <td id="enemy3" class="enemy"></td>
+                                <td id="enemy4" class="enemy"></td>
+                                <td id="enemy5" class="enemy"></td>
+                            </tr>
+                            <tr>
+                                <td id="myteamblood1" class="myteamblood"></td>
+                                <td id="myteamblood2" class="myteamblood"></td>
+                                <td id="myteamblood3" class="myteamblood"></td>
+                                <td id="myteamblood4" class="myteamblood"></td>
+                                <td id="myteamblood5" class="myteamblood"></td>
+                            </tr>
+                            <tr>
+                                <td id="myteam1" class="myteam"></td>
+                                <td id="myteam2" class="myteam"></td>
+                                <td id="myteam3" class="myteam"></td>
+                                <td id="myteam4" class="myteam"></td>
+                                <td id="myteam5" class="myteam"></td>
+                            </tr>
+
+                            <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td id="bloodline2" class="bloodline" colspan="5"></td>
+                            </tr>
+                            <tr>
+                                <td id="tower2" class="tower" colspan="5"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+                        </table>
+                    </div>
+                    <!-- <div>
+                        <table id="attacktable">
+                            <tr>
+                                <td id="attack1"><img src="picture/strongacid.png"></td>
+                                <td id="attack2"><img src="picture/strongbase.png"></td>
+                                <td id="attack3"><img src="picture/weakacid.png"></td>
+                                <td id="attack4"><img src="picture/weakbase.png"></td>
+                                <td id="attack5"><img src="picture/rock.png"></td>
+                                <td id="attack6"><img src="picture/twonaturerock.png"></td>
+                            </tr>
+                            <tr>
+                                <td id="attacknumber1"></td>
+                                <td id="attacknumber2"></td>
+                                <td id="attacknumber3"></td>
+                                <td id="attacknumber4"></td>
+                                <td id="attacknumber5"></td>
+                                <td id="attacknumber6"></td>
+                            </tr>
+                            <tr>
+                                <td id="attack7"><img src="picture/transitionrock.png"></td>
+                                <td id="attack8"><img src="picture/twoandtrarock.png"></td>
+                                <td id="attack9"><img src="picture/water.png"></td>
+                                <td id="attack10"><img src="picture/NH3.png"></td>
+                                <td id="attack11"><img src="picture/weakacidandOHrock.png"></td>
+                                <td id="attack12"><img src="picture/traandweakandOHrock.png"></td>
+                            </tr>
+                            <tr>
+                                <td id="attacknumber7"></td>
+                                <td id="attacknumber8"></td>
+                                <td id="attacknumber9"></td>
+                                <td id="attacknumber10"></td>
+                                <td id="attacknumber11"></td>
+                                <td id="attacknumber12"></td>
+                            </tr>
+                        </table>
+                    </div> -->
+                </div>
+            </div>
+            <div id="endgame1">
+                
+            </div>
+            <div id="timer">
+                
+                <!-- <label name="time">計時器</label> -->
+            </div>
+            <script type="text/javascript" src="script4.js" language="javascript"></script>
+        </body>
+    
+</html>
