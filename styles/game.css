@@ -1,0 +1,436 @@
+button {
+    background-color: transparent;
+    border: none;
+}
+
+#allscreen {
+    position: absolute;
+    background-image: url("./picture/美工圖/grassskin.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+body tr td {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+table {
+    position: relative;
+    margin: auto;
+}
+
+table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#overall {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 1;
+}
+
+#questionproblem {
+    animation: name;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name {
+    0% {
+        background-color: rgb(255, 255, 240)
+    }
+    50% {
+        background-color: rgb(243, 228, 88)
+    }
+    100% {
+        background-color: rgb(255, 255, 240)
+    }
+}
+
+#questionimage {
+    height: 10vh;
+    width: 7vh;
+}
+
+#questionimage:hover {
+    background-color: #4fb379;
+    height: 10vh;
+    width: 7vh;
+}
+
+#count-down-timer {
+    position: fixed;
+    top: 2vh;
+    right: 20px;
+    text-align: center;
+    vertical-align: middle;
+    width: 9vh;
+    height: 5vh;
+    background-color: rgb(158, 189, 71);
+}
+
+.change {
+    background-color: red;
+}
+
+#endgame {
+    position: absolute;
+    z-index: 2;
+    top: 0vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+}
+
+#endgamecontent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 7vw;
+    position: relative;
+    top: 20vh;
+    z-index: 3;
+    width: 100vw;
+    height: 25vh;
+    background-color: white;
+    text-align: center;
+}
+
+#endgamebutton {
+    position: absolute;
+    top: 60vh;
+    left: 75vw;
+    z-index: 4;
+    width: 12vw;
+    height: 5vh;
+    font-size: 1vw;
+    background-color: rgb(189, 35, 35);
+}
+
+#endgamebutton:hover {
+    background-color: rgb(204, 80, 80);
+}
+
+#again {
+    position: absolute;
+    top: 60vh;
+    left: 60vw;
+    z-index: 4;
+    width: 12vw;
+    height: 5vh;
+    font-size: 1vw;
+    background-color: rgb(35, 189, 150);
+}
+
+#again:hover {
+    background-color: rgb(80, 99, 204);
+}
+
+#chunk1 {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.elementbutton {
+    width: 6vw;
+    height: 6vw;
+}
+
+.elementimage {
+    width: 5vw;
+    height: 5vw;
+}
+
+.elementbutton:hover {
+    background-color: rgb(233, 233, 125);
+}
+
+#compoundbutton:hover {
+    background-color: rgb(125, 190, 233);
+}
+
+#renewbutton {
+    position: fixed;
+    z-index: 2;
+    left: 1vw;
+    top: 2vh;
+    width: 7vh;
+    height: 7vh;
+}
+
+#renewbutton:hover {
+    background-color: aqua;
+}
+
+#renewimage {
+    width: 6vh;
+    height: 6vh;
+}
+
+#miner {
+    background-image: url("./picture/美工圖/\(water\)gamebackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*     background-size: ; */
+    flex: 2;
+}
+
+#minertable {
+    top: 3vh;
+    padding: 3vh;
+    width: 33vw;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#minertable tr td {
+    width: 11vw;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#backpack {
+    background-image: url("./picture/美工圖/\(village\)gamebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+#backpacktable {
+    width: 33vw;
+    height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#backpacktable tr td {
+    width: 11vw;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#compound {
+    background-image: url("./picture/美工圖/\(mixing_room\)gamebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+}
+
+#compoundtable {
+    width: 33vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#compoundtable tr td {
+    width: 11vw;
+    height: 12vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#compoundbutton {
+    width: 6vw;
+    height: 6vw;
+}
+
+#compoundimage {
+    width: 5vw;
+    height: 5vw;
+}
+
+#binimage {
+    width: 6vw;
+    height: 6vw;
+}
+
+#bin {
+    background-color: rgb(185, 185, 185);
+    color: rgb(78, 60, 82);
+}
+
+#trashnumber {
+    font-size: 5vw;
+    color: rgba(255, 0, 0, 0.507);
+}
+
+#map {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url("./picture/美工圖/背景原圖\(無堡壘\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chunk2 {
+    flex: 1;
+    width: 33vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#picture1 {
+    width: 33vw;
+}
+
+#picture2 {
+    width: 33vw;
+}
+
+#question {
+    flex: 1;
+}
+
+#strengthen {
+    top: 10vh;
+    position: fixed;
+    flex: 1;
+}
+
+#chunk3 {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#fight {
+    flex: 1;
+}
+
+#fighttable {
+    width: 33vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* border-style: dashed; */
+}
+
+#fighttable tr .enemyblood {
+    height: 5vh;
+    color: rgb(197, 11, 11);
+}
+
+#fighttable tr .enemy {
+    height: 15vh;
+}
+
+#fighttable tr .myteamblood {
+    height: 5vh;
+    color: rgb(3, 3, 182);
+}
+
+#fighttable tr .myteam {
+    height: 15vh;
+}
+
+#fighttable tr .bloodline {
+    height: 5vh;
+}
+
+#bloodline1 {
+    color: rgb(197, 11, 11);
+    position: relative;
+    left: 7vw;
+}
+
+#bloodline2 {
+    color: rgb(3, 3, 182);
+}
+
+#towerbloodbutton {
+    background-image: url("./picture/美工圖/敵方城堡.png");
+    background-repeat: no-repeat;
+    background-size: 15vh;
+    position: relative;
+    /*left:50vw;/* 元素水平置中 */
+    left: 7vw;
+    width: 15vh;
+    height: 15vh;
+}
+
+#towerbloodbutton:hover {
+    background-color: #ccc;
+}
+
+#fighttable tr .tower {
+    height: 8vh;
+}
+
+#tower2image {
+    height: 15vh;
+}
+
+
+/* --表單-- */
+
+body form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+input[type=text],
+select,
+textarea {
+    background-color: rgb(187, 221, 221);
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    font-size: 2vh;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    font-size: xx-large;
+    color: white;
+    width: 12vw;
+    height: 5vh;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    position: fixed;
+    bottom: 5vh;
+    z-index: 4;
+    width: 25vw;
+    height: 30vh;
+    background-color: rgb(187, 221, 221);
+}
+
+input[type=text]:hover {
+    background-color: rgb(176, 197, 190);
+}
+
+select:hover {
+    background-color: rgb(176, 197, 190);
+}
+
+textarea {
+    font-size: 2vh;
+    box-sizing: border-box;
+}

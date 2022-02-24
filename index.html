@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html><!--網頁最外層-->
-    <head><!--網頁資訊-->
-        <meta charset="UTF-8"></meta><!--UTF-8編碼方式這樣才看得懂中文-->
+<html>
+    <head>
+        <meta charset="utf-8">
         <meta name="description" content="幫助大家學化學"/>
         <meta name="author" content="劉佑庭 林育聖 陳昱辰"/>
         <meta name="keywords" content="科展"/>
         <meta name="viewport" content="width=device-width,inital-scale=1.0"/>
-        <title><!--網頁標籤-->
-            化學大戰
-        </title>
-        <link rel="stylesheet" href="stylehome.css">
-           
-        
+        <title>化學大戰</title>
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/home.css">
+		<script src="./scripts/home.js" language="javascript"></script>
     </head>
-        
-        <div id="overall">
-<!--                 <p>問題回報:<a href="mailto:chemicalwartcssh@gmail.com">chemicalwartcssh@gmail.com</a></p>-->                
-                <h1 id="title">化學大戰爭</h1>
-                <br><br><br><br><br><br><br><br><br><br>
-                <body>
-                    
-                    <p style='display: inline;'><a href="game1.html"><button id="game1button" class="gamebuttonlevel1 gamebutton" type="button">進階計時賽</button></a></p><p style='display: inline;'><a href="game3.html"><button id="game3button" class="gamebuttonlevel2 gamebutton" type="button">基礎計時賽</button></a></p>
-                    <br><br><br><br><br>
-                    <p style='display: inline;'><a href="game2.html"><button id="game2button" class="gamebuttonlevel1 gamebutton" type="button">進階計分賽</button></a></p><p style='display: inline;'><a href="game4.html"><button id="game4button" class="gamebuttonlevel2 gamebutton" type="button">基礎計分賽</button></a></p>
-                    <br><br><br><br><br>
-                    <p style='display: inline;'><a href="game.html"><button id="game0button" class="gamebuttonlevel1 gamebutton" type="button">進階標準賽</button></a></p><p style='display: inline;'><a href="game5.html"><button id="game5button" class="gamebuttonlevel2 gamebutton" type="button">基礎標準賽</button></a></p>
-                    <br><br><br><br><br>
-                    <p style='display: inline;'><a href="introduce.html"><button id="introducebutton" class="gamebutton" type="button">遊戲介紹</button></a></p>
-                </body>
-            
-            
-        </div>
-        
-    
+	<body id="overall"><img src="./picture/background/main-min.gif" id="background"> 
+		<div>
+			<p id="report">問題回報：<!-- <a href="mailto:chemicalwartcssh@gmail.com">chemicalwartcssh@gmail.com</a> --><a href="https://forms.gle/GuoMdb5en9z4eABy6">https://forms.gle/GuoMdb5en9z4eABy6</a></p>
+			<p id="title">化學大戰爭</p>
+			<div ></div>
+			<table id="gamebutton">
+				<tr>
+					<td><a href="game.html?level=1"><button id="game1button" class="gamebuttonlevel1 gamebutton" type="button">進階計時排名賽</button></a></td>
+					<td><a href="game.html?level=3"><button id="game3button" class="gamebuttonlevel2 gamebutton" type="button">基礎計時排名賽</button></a></td>
+				</tr>
+				<tr>
+					<td><a href="game.html?level=2"><button id="game2button" class="gamebuttonlevel1 gamebutton" type="button">進階計分排名賽</button></a></td>
+					<td><a href="game.html?level=1"><button id="game4button" class="gamebuttonlevel2 gamebutton" type="button">基礎計分排名賽</button></a></td>
+				</tr>
+				<tr>
+					<td><a href="game.html?level=5"><button id="game5button" class="gamebuttonlevel2 gamebutton" type="button">基礎訓練營</button></a></td>
+					<td><a href="game.html?level=0"><button id="game0button" class="gamebuttonlevel1 gamebutton" type="button">進階訓練營</button></a></td>
+				</tr>
+				<tr>
+					<td><a href="introduce.html"><button id="introducebutton" class="gamebutton" type="button">遊戲介紹</button></a></td>
+					<td><p id="pre-test"><a href="./gotoform.html"><button id="form" class="gamebuttonlevel2 gamebutton" type="button">化學大戰爭前測</button></a></p></td>
+				</tr>
+			</table>
+			<div id="post-test">
+				<p><strong>敬告：</strong></p>
+				<p>於3/15日將會有後測（反正有人會修我這裡就不管了）</p>
+			</div>
+			<p id="hint"></p>
+		</div>
+	<div id="rank"></div>
+	<p id="renew">
+		<marquee direction="right" height="30" scrollamount="5" behavior="alternate" id="renewinformation">
+		更新資訊：為提升玩家有效合成數，以及新手上手順利。將排名賽的我方主堡血量調至1000點，且合成出垃圾扣血提升至300點。而訓練營的我方主堡血量、合成出垃圾扣血不變，敵方主堡血量降至3000點。
+		<br>
+		敵方血量愈多，離子生成速率愈快。我方場上士兵愈多，敵方派遣速率愈快。錯誤合成上限調至6個。
+		</marquee>
+	</p>
+</body>
 </html>
